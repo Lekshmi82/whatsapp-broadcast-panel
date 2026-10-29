@@ -1,0 +1,38 @@
+{
+  "name": "whatsapp-broadcast-panel",
+  "version": "1.0.0",
+  "description": "Send one announcement (text + image) to many WhatsApp groups you manage, from your own computer, with read-count analytics. Unofficial; uses whatsapp-web.js.",
+  "main": "panel/server.js",
+  "scripts": {
+    "start": "node panel/server.js",
+    "panel": "node panel/server.js",
+    "list": "node send-to-groups.js",
+    "inventory": "node inventory.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "2.1.3",
+    "mime": "3.0.0",
+    "node-fetch": "2.7.0",
+    "node-webpmux": "3.2.1",
+    "puppeteer": "24.38.0",
+    "qrcode-terminal": "0.12.0"
+  },
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web.js",
+    "broadcast",
+    "groups",
+    "communities",
+    "announcements"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lekshmi82/whatsapp-broadcast-panel.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
